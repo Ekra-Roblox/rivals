@@ -2,6 +2,13 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "EKRA FREE | RIVALS | V1 | UNDETECTED", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
+-- User--
+local UserTab = Window:MakeTab({
+    Name = "User",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
 -- Visuals --
 local VisualTab = Window:MakeTab({
     Name = "Visual",
@@ -16,6 +23,9 @@ local AimTab = Window:MakeTab({
     PremiumOnly = false
 })
 
+-- User Toggle --
+UserTab:AddLabel("Player Jumps")
+
 -- User --
 UserTab:AddToggle({
 	Name = "Infinite Jump",
@@ -24,8 +34,6 @@ UserTab:AddToggle({
 		print(Value)
 	end    
 })
-
-AimTab:AddLabel("Silent-Aim")
 
 -- aimbot
 AimTab:AddButton({
@@ -116,8 +124,6 @@ end)
 		print(Value)
 	end    
 })
-
-VisualTab:AddLabel("Visuals For Aimbot + Others.")
 
 VisualTab:AddButton({
 	Name = "Chams - Visual",
@@ -329,3 +335,5 @@ end)
       		print("button pressed")
   	end    
 })
+message.txt
+9 KB
